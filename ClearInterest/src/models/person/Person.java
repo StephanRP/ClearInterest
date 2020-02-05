@@ -7,8 +7,6 @@ public class Person {
     private Wallet[] wallet;
     private double interest = 0;
 
-    public Person() {}
-
     public Person(Wallet[] wallet) {
         setWallet(wallet);
         calcInterest();
@@ -19,20 +17,12 @@ public class Person {
             this.interest += wallet[i].getInterest();
     }
 
-    public Wallet[] getWallet() {
-        return wallet;
-    }
-
     public void setWallet(Wallet[] wallet) {
         this.wallet = wallet;
     }
 
     public double getInterest() {
         return interest;
-    }
-
-    public void setInterest(double interest) {
-        this.interest = interest;
     }
 
 }

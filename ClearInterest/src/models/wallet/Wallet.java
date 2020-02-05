@@ -7,8 +7,6 @@ public class Wallet {
     private CreditCard[] cards;
     private double interest = 0;
 
-    public Wallet() {}
-
     public Wallet(CreditCard[] cards) {
         setCards(cards);
         calcInterest();
@@ -21,14 +19,6 @@ public class Wallet {
 
     public double getInterest() {
         return interest;
-    }
-
-    public void setInterest(double interest) {
-        this.interest = interest;
-    }
-
-    public CreditCard[] getCards() {
-        return cards;
     }
 
     public void setCards(CreditCard[] cards) {

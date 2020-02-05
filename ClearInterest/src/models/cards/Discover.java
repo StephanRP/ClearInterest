@@ -14,20 +14,12 @@ public class Discover implements CreditCard {
     }
 
     @Override
-    public double getInterestRate() {
-        return INTEREST_RATE;
-    }
-    @Override
     public double getInterest() {
         return interest;
     }
     @Override
     public void setInterest() {
         this.interest = balance * INTEREST_RATE;
-    }
-    @Override
-    public double getBalance() {
-        return balance;
     }
     @Override
     public void setBalance(double balance) {

@@ -2,14 +2,10 @@ package models.cards;
 
 public interface CreditCard {
 
-    public double getInterestRate();
+    double getInterest();
 
-    public double getInterest();
+    void setInterest();
 
-    public void setInterest();
-
-    public double getBalance();
-
-    public void setBalance(double balance);
+    void setBalance(double balance);
 
 }
